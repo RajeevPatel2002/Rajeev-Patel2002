@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.contact-container {
+    min-height: 400px;
+    width: 100%;
+    padding: 20px;
+    background:#e1e1e1;
+    text-align: center;
+}
+.c-content{
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: ease-in 1s;
+}
+.c-content:hover{
+   word-spacing:3px;
+}
+.c-content1{
+    font-size:25px;
+    font-weight: 900;
+    color: #000;
+    margin-bottom: 20px;
+    transition: ease-in 1s;
+}
+.c-content1:hover{
+    word-spacing:3px;
+}
+.c-main{
+    height: 70px;
+    width: 70%;
+    display:flex;
+    justify-content:space-between;
+    margin: 0px auto;
+}
+.form-group{
+    height: 60px;
+    width: 30%;
+    font-size: 25px;
+    transition: ease-in 1s;
+}
+.form-group input:focus {
+    outline:none;
+}
+.form-group input{
+    transition: ease-in 1s;
+}
+.form-group input:hover{
+    box-shadow: 0 10px 19px rgba(0, 0, 0, 0.907);
+}
+input[type="text"],
+input[type="email"],
+.textarea {
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.textarea {
+    height: 70px;
+    width: 50%;
+    transition: ease-in 1s;
+}
+.textarea:focus {
+   outline-color: #fff;
+   
+}
+.textarea:hover{
+    border: 2px solid #f00;
+    box-shadow: 0 10px 19px rgba(0, 0, 0, 0.907);
+}
+.submit-btn {
+    height: 50px;
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: ease-in 1s;
+}
+.submit-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 10px 19px rgba(0, 0, 0, 0.974);
+}
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.info {
+    min-height:150px;
+    width: 30%;
+    text-align:center;
+    font-size: 25px;
+    font-weight: 800;
+    word-wrap: break-word;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+    transition: ease-in 1s;
+}
+.info:hover {  
+    border-radius: 10px;
+    box-shadow: 0 10px 19px rgba(0, 0, 0, 0.907);
+}
+.c-info {
+    margin-bottom: 10px;
+}
+.map {
+    margin-top: 20px;
+}
+.iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 4px;
+}

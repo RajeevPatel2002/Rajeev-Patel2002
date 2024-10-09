@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Admin.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div class="Admin-body">
+        <div class="Admin-container">
+            <!-- Sidebar -->
+            <nav class="sidebar">
+                <div class="logo">
+                    <h2>Admin</h2>
+                </div>
+                <ul>
+                    <li><a onclick="showSection('dashboard')">Dashboard</a></li>
+                    <li><a onclick="showSection('contact')">Contact</a></li>
+                    <li><a onclick="showSection('enquiry')">Enquiry</a></li>
+                    <li><a onclick="showSection('user')">Users</a></li>
+                    <li><a onclick="showSection('room')">Rooms</a></li>
+                    <li><a onclick="showSection('booking')">Booking</a></li>
+                    <input class="i-but" type="button" value="Logout">
+                </ul>
+            </nav>
+
+            <!-- Main Content Sections -->
+            <div id="dashboard" class="main-content">
+                <header class="header">
+                    <h2>Dashboard</h2>
+                </header>
+                <div class="dashboard-cards">
+                    <div class="card">
+                        <h3>86</h3>
+                        <p>Room Booked</p>
+                    </div>
+                    <div class="card">
+                        <h3>36</h3>
+                        <p>Room UnBook</p>
+                    </div>
+                    <div class="card">
+                        <h3>124</h3>
+                        <p>Total Rooms</p>
+                    </div>
+                    <div class="card">
+                        <h3>13</h3>
+                        <p>Booking Pending</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact" class="main-content">
+                <div class="table-container">
+                    <h2 class="table-content">Contact</h2>
+                    <table class="table">
+                        <thead>
+                            <tr class="tr">
+                                <th class="th">Sr. No.</th>
+                                <th class="th">Name</th>
+                                <th class="th">Phone No.</th>
+                                <th class="th">Email ID</th>
+                                <th class="th">Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr">
+                                <td class="td">1</td>
+                                <td class="td">Rajeev Patel</td>
+                                <td class="td">(123) 456-7890</td>
+                                <td class="td">john.doe@example.com</td>
+                                <td class="td"></td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="td">2</td>
+                                <td class="td">Vansh Tiwari</td>
+                                <td class="td">(123) 456-7890</td>
+                                <td class="td">vansh.tiwari@example.com</td>
+                                <td class="td"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Enquiry Section -->
+            <div id="enquiry" class="main-content">
+                <div class="table-container">
+                    <h2 class="table-content" >Enquiry</h2>
+                    <table class="table">
+                        <thead>
+                            <tr class="tr">
+                                <th class="th">Sr. No.</th>
+                                <th class="th">Name</th>
+                                <th class="th">Phone No.</th>
+                                <th class="th">Email ID</th>
+                                <th class="th">Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr">
+                                <td class="td">1</td>
+                                <td class="td">Rajeev Patel</td>
+                                <td class="td">(123) 456-7890</td>
+                                <td class="td">john.doe@example.com</td>
+                                <td class="td"></td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="td">2</td>
+                                <td class="td">Vansh Tiwari</td>
+                                <td class="td">(123) 456-7890</td>
+                                <td class="td">vansh.tiwari@example.com</td>
+                                <td class="td"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- User Section -->
+            <div id="user" class="main-content">
+                <div class="table-container">
+                    <h2 class="table-content" >Users</h2>
+                    <table class="table">
+                        <thead>
+                            <tr class="tr">
+                                <th class="th">Sr. No.</th>
+                                <th class="th">First Name</th>
+                                <th class="th">Last Name</th>
+                                <th class="th">Phone No.</th>
+                                <th class="th">Email ID</th>
+                                <th class="th">Aadhar No.</th>
+                                <th class="th">Profile Image</th>
+                                <th class="th">Role</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr">
+                                <td class="td">1</td>
+                                <td class="td">Rajeev</td>
+                                <td class="td">Patel</td>
+                                <td class="td">(123) 456-7890</td>
+                                <td class="td">john.doe@example.com</td>
+                                <td class="td">1234-5678-9123</td>
+                                <td class="td"></td>
+                                <td class="td">0</td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="td">2</td>
+                                <td class="td">Vansh</td>
+                                <td class="td">Tiwari</td>
+                                <td class="td">(987) 654-3210</td>
+                                <td class="td">jane.smith@example.com</td>
+                                <td class="td">9876-5432-1098</td>
+                                <td class="td"></td>
+                                <td class="td">0</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Room Section -->
+            <div id="room" class="main-content">
+                <div class="table-container">
+                    <h2 class="table-content" >Rooms</h2>
+                    <table class="table">
+                        <thead>
+                            <tr class="tr">
+                                <th class="th">Sr. No.</th>
+                                <th class="th">Room No.</th>
+                                <th class="th">Category</th>
+                                <th class="th">Description</th>
+                                <th class="th">Price</th>
+                                <th class="th">Total Beds</th>
+                                <th class="th">Capacity</th>
+                                <th class="th">Room Bookig Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr">
+                                <td class="td">1</td>
+                                <td class="td">1001</td>
+                                <td class="td">AC</td>
+                                <td class="td">This Is the best Room Of my Hotel </td>
+                                <td class="td">2000 RS</td>
+                                <td class="td">3</td>
+                                <td class="td">6 people</td>
+                                <td class="td">Available</td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="td">2</td>
+                                <td class="td">1002</td>
+                                <td class="td">AC</td>
+                                <td class="td">This Is the best Room Of my Hotel </td>
+                                <td class="td">2000 RS</td>
+                                <td class="td">3</td>
+                                <td class="td">6 people</td>
+                                <td class="td">Available</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Booking Section -->
+            <div id="booking" class="main-content">
+                <div class="table-container">
+                    <h2 class="table-content" >Booking</h2>
+                    <table class="table">
+                        <thead>
+                            <tr class="tr">
+                                <th class="th">Sr. No.</th>
+                                <th class="th">Category</th>
+                                <th class="th">Description</th>
+                                <th class="th">Price</th>
+                                <th class="th">Total Beds</th>
+                                <th class="th">Capacity</th>
+                                <th class="th">First Name</th>
+                                <th class="th">Last Name</th>
+                                <th class="th">Phone No.</th>
+                                <th class="th">Email ID</th>
+                                <th class="th">Aadhaar No.</th>
+                                <th class="th">Room Image</th>
+                                <th class="th">CheckIn Date</th>
+                                <th class="th">CheckOut Date</th>
+                                <th class="th">Room Bookig Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr">
+                                <td class="td">1</td>
+                                <td class="td">AC</td>
+                                <td class="td">Best--Room </td>
+                                <td class="td">2000 RS</td>
+                                <td class="td">3</td>
+                                <td class="td">6 people</td>
+                                <td class="td">Rajeev</td>
+                                <td class="td">Patel</td>
+                                <td class="td">(123) 456-7890</td>
+                                <td class="td">--@gmail.com</td>
+                                <td class="td">1234-5678-9123</td>
+                                <td class="td"></td>
+                                <td class="td">09-09-2024</td>
+                                <td class="td">11-09-2024</td>
+                                <td class="td">Available</td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="td">2</td>
+                                <td class="td">AC</td>
+                                <td class="td">best--Room </td>
+                                <td class="td">2000 RS</td>
+                                <td class="td">3</td>
+                                <td class="td">6 people</td>
+                                <td class="td">Rajeev</td>
+                                <td class="td">Patel</td>
+                                <td class="td">(123) 456-7890</td>
+                                <td class="td">--@gmail.com</td>
+                                <td class="td">1234-5678-9123</td>
+                                <td class="td"></td>
+                                <td class="td">09-09-2024</td>
+                                <td class="td">11-09-2024</td>
+                                <td class="td">Available</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<!-- ------------------------------- -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.main-content');
+            sections.forEach(section => section.style.display = 'none');
+            
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Show the dashboard by default when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('dashboard');
+        });
+    </script>
+</body>
+</html>
